@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="113.0" layoutY="162.0" prefHeight="20.0" prefWidth="45.0" text="EMAIL">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="113.0" layoutY="242.0" prefHeight="20.0" prefWidth="86.0" text="PASSWORD">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="113.0" layoutY="287.0" prefHeight="20.0" prefWidth="142.0" text="RE-TYPE PASSWORD">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="addName" layoutX="301.0" layoutY="122.0" />
+            <TextField fx:id="addEmail" layoutX="301.0" layoutY="159.0" />
+            <TextField fx:id="addUser" layoutX="301.0" layoutY="201.0" />
+            <PasswordField fx:id="addPass" layoutX="301.0" layoutY="240.0" />
+            <PasswordField fx:id="addRetypePass" layoutX="301.0" layoutY="284.0" />
+            <Button fx:id="editData" layoutX="199.0" layoutY="327.0" mnemonicParsing="false" onAction="#editUserData" prefHeight="30.0" prefWidth="71.0" text="EDIT">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelButton" layoutX="318.0" layoutY="327.0" mnemonicParsing="false" onAction="#goToHome" text="CANCEL">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="logo" fitHeight="75.0" fitWidth="86.0" layoutX="262.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@titlelogo.png" />
+               </image></ImageView>
+            <Label layoutX="265.0" layoutY="378.0" text="VERSION 1.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="113.0" layoutY="125.0" prefHeight="20.0" prefWidth="45.0" text="NAME">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="113.0" layoutY="204.0" prefHeight="20.0" prefWidth="86.0" text="USERNAME">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children></Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane fx:id="editDataPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="237.0" layoutY="26.0" prefHeight="39.0" prefWidth="98.0" text="EDIT DATA">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="264.0" layoutY="98.0" prefHeight="20.0" prefWidth="45.0" text="EMAIL">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="244.0" layoutY="134.0" prefHeight="20.0" prefWidth="86.0" text="USERNAME">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="244.0" layoutY="174.0" prefHeight="20.0" prefWidth="86.0" text="PASSWORD">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="230.0" layoutY="213.0" prefHeight="20.0" prefWidth="142.0" text="RE-TYPE PASSWORD">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="266.0" layoutY="259.0" prefHeight="20.0" prefWidth="69.0" text="URL">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="253.0" layoutY="303.0" prefHeight="20.0" prefWidth="69.0" text="REMARK">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="oldEmail" editable="false" layoutX="46.0" layoutY="96.0" />
+            <TextField fx:id="oldUsername" editable="false" layoutX="46.0" layoutY="132.0" />
+            <TextField fx:id="oldPass" editable="false" layoutX="46.0" layoutY="172.0" />
+            <PasswordField fx:id="oldRetypePass" editable="false" layoutX="46.0" layoutY="209.0" />
+            <TextField fx:id="oldUrl" editable="false" layoutX="46.0" layoutY="256.0" />
+            <TextField fx:id="oldRemark" editable="false" layoutX="46.0" layoutY="295.0" />
+            <Button fx:id="retrieveButton" layoutX="124.0" layoutY="345.0" mnemonicParsing="false" onAction="#goToEditPage" prefHeight="30.0" prefWidth="78.0" text="RETRIEVE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="editButton" layoutX="251.0" layoutY="345.0" mnemonicParsing="false" onAction="#handleEditData" prefHeight="30.0" prefWidth="78.0" text="EDIT">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelButton" layoutX="384.0" layoutY="345.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="30.0" prefWidth="78.0" text="CANCEL">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="newEmail" layoutX="406.0" layoutY="96.0" />
+            <TextField fx:id="newUsername" layoutX="406.0" layoutY="132.0" />
+            <PasswordField fx:id="newPassWord" layoutX="406.0" layoutY="172.0" />
+            <PasswordField fx:id="newReTypePass" layoutX="406.0" layoutY="210.0" />
+            <TextField fx:id="newURL" layoutX="406.0" layoutY="256.0" />
+            <TextField fx:id="newREMARK" layoutX="406.0" layoutY="301.0" />
+         </children></Pane>
+   </children>
+</AnchorPane>
